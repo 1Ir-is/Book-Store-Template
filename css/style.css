@@ -42,12 +42,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 section{
-    margin-top: -100px;
-    width: 100%;
-    height: 100vh;
-    background-image: url(/image/bg.png);
-    background-size: cover;
-    background-position: center;
+    padding: 5rem 9%;
 }
 
 .btn{
@@ -283,70 +278,79 @@ section{
 }
 /* Login Form End*/
 
+/* Home section start */
+.home{
+    background: url(../image/smooth-white-brick-wall.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
-/* Home Section Start*/
-.main{
+.home .row{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    position: relative;
-    top: 10%;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
-.main h1{
-    position: relative;
-    font-size: 55px;
-    top: 80px;
-    left: 25px;
+.home .row .content{
+    flex: 1 1 42rem;
+}
+
+.home .row .books-slider{
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home .row .books-slider .stand{
+    width: 100%;
+    margin-top: -2rem;
+}
+
+.home .row .content h3{
     color: var(--black);
+    font-size: 4.5rem;
 }
 
-.main h1 span{
+.home .row .content p{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+/* Home section end */
+
+
+/* Service section start */
+.icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.icons-container .icons{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.icons-container .icons i{
+    font-size: 3.5rem;
     color: var(--green);
 }
 
-.main p{
-    width: 650px;
-    text-align: justify;
-    line-height: 22px;
-    position: relative;
-    top: 125px;
-    left: 25px;
-    font-size: 1.5rem;
+.icons-container .icons h3{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.icons-container .icons p{
+    font-size: 1.4rem;
     color: var(--light-color);
-    margin-top: -34px;
-    margin-bottom: -30px;
 }
-
-.main .main_tag .main_btn{
-    padding: 10px 20px;
-    position: relative;
-    top: 200px;
-    left: 25px;
-    color: #fff;
-    text-decoration: none;
-    padding: .9rem 3rem;
-    border-radius: .5rem;
-    color: #fff;
-    background: var(--green);
-    font-size: 1.7rem;
-    cursor: pointer;
-    font-weight: 500;
-}
-
-.main .main_tag .main_btn:hover{
-    background: var(--dark-color);
-    transition: 0.35s ease-in-out;
-}
-
-.main .main_img img{
-    width: 780px;
-    position: relative;
-    top: 90px;
-    left: 20px;
-}
-/* Home Section End*/
-
+/* Service section end */
 
 
 
@@ -376,6 +380,10 @@ section{
 
     .header .header-1{
         padding: 2rem;
+    }
+
+    section{
+        padding: 3rem, 2rem;
     }
 }
 
@@ -417,6 +425,14 @@ section{
     .header .header-1 .search-form.active{
         transition: 0.45s;
         top: 115%;
+    }
+
+    .home .row .content h3{
+        font-size: 3.5rem;
+    }
+
+    .home .row .content{
+        text-align: center;
     }
 }
 
