@@ -41,6 +41,15 @@ html::-webkit-scrollbar-thumb{
     background: var(--black);
 }
 
+section{
+    margin-top: -100px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/image/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -275,6 +284,68 @@ html::-webkit-scrollbar-thumb{
 /* Login Form End*/
 
 
+/* Home Section Start*/
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+}
+
+.main h1{
+    position: relative;
+    font-size: 55px;
+    top: 80px;
+    left: 25px;
+    color: var(--black);
+}
+
+.main h1 span{
+    color: var(--green);
+}
+
+.main p{
+    width: 650px;
+    text-align: justify;
+    line-height: 22px;
+    position: relative;
+    top: 125px;
+    left: 25px;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    margin-top: -34px;
+    margin-bottom: -30px;
+}
+
+.main .main_tag .main_btn{
+    padding: 10px 20px;
+    position: relative;
+    top: 200px;
+    left: 25px;
+    color: #fff;
+    text-decoration: none;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: var(--green);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.main .main_tag .main_btn:hover{
+    background: var(--dark-color);
+    transition: 0.35s ease-in-out;
+}
+
+.main .main_img img{
+    width: 780px;
+    position: relative;
+    top: 90px;
+    left: 20px;
+}
+/* Home Section End*/
 
 
 
