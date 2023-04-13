@@ -25,6 +25,7 @@ body {
 	border-bottom: 1px solid #ddd;
 	border-radius: 0;
 	color: #333;
+    
 }
 .nav-pills a.nav-link i {
 	width: 20px;
@@ -35,4 +36,9 @@ body {
 	width: 100px;
 	border-radius: 100%;
 	border: 5px solid #fff;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #27ae60;
 }
