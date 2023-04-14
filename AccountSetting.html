@@ -23,69 +23,51 @@
 					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 						<a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab" aria-controls="account" aria-selected="true">
 							<i class="fa fa-home text-center mr-1"></i> 
-							Account
+							Profile
+						</a>
+						<a class="nav-link" id="email-tab" data-toggle="pill" href="#email" role="tab" aria-controls="email" aria-selected="false">
+							<i class="fa fa-envelope text-center mr-1"></i> 
+							Email
 						</a>
 						<a class="nav-link" id="password-tab" data-toggle="pill" href="#password" role="tab" aria-controls="password" aria-selected="false">
 							<i class="fa fa-key text-center mr-1"></i> 
 							Password
 						</a>
-						<a class="nav-link" id="security-tab" data-toggle="pill" href="#security" role="tab" aria-controls="security" aria-selected="false">
-							<i class="fa fa-user text-center mr-1"></i> 
-							Security
-						</a>
-						<a class="nav-link" id="application-tab" data-toggle="pill" href="#application" role="tab" aria-controls="application" aria-selected="false">
+						<a class="nav-link" id="2fa-tab" data-toggle="pill" href="#2fa" role="tab" aria-controls="2fa" aria-selected="false">
 							<i class="fa fa-tv text-center mr-1"></i> 
-							Application
+							Two - Factor Authentication
 						</a>
-						<a class="nav-link" id="notification-tab" data-toggle="pill" href="#notification" role="tab" aria-controls="notification" aria-selected="false">
-							<i class="fa fa-bell text-center mr-1"></i> 
-							Notification
+						<a class="nav-link" id="personal-tab" data-toggle="pill" href="#personal" role="tab" aria-controls="personal" aria-selected="false">
+							<i class="fa fa-database text-center mr-1"></i> 
+							Personal Data
 						</a>
 					</div>
 				</div>
 				<div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
 					<div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
-						<h3 class="mb-4">Account Settings</h3>
+						<h3 class="mb-4">Profile Settings</h3>
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-								  	<label>First Name</label>
+								  	<label> Username</label>
 								  	<input type="text" class="form-control" value="">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-								  	<label>Last Name</label>
+								  	<label>Phone Number</label>
 								  	<input type="text" class="form-control" value="">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-								  	<label>Email</label>
-								  	<input type="text" class="form-control" value="">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-								  	<label>Phone number</label>
-								  	<input type="text" class="form-control" value="">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-								  	<label>Company</label>
-								  	<input type="text" class="form-control" value="">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-								  	<label>Designation</label>
+								  	<label>Address</label>
 								  	<input type="text" class="form-control" value="">
 								</div>
 							</div>
 						</div>
 						<div>
-							<button class="btn btn-success">Update</button>
+							<button class="btn btn-success">Save</button>
 						</div>
 					</div>
 
@@ -94,7 +76,7 @@
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-								  	<label>Old password</label>
+								  	<label>Current password</label>
 								  	<input type="password" class="form-control">
 								</div>
 							</div>
@@ -114,64 +96,40 @@
 							</div>
 						</div>
 						<div>
-							<button class="btn btn-success">Update</button>
+							<button class="btn btn-success">Save</button>
 						</div>
 					</div>
-					<div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
-						<h3 class="mb-4">Security Settings</h3>
+					<div class="tab-pane fade" id="email" role="tabpanel" aria-labelledby="email-tab">
+						<h3 class="mb-4">Manage Email</h3>
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-								  	<label>Login</label>
+								  	<label>Current Email</label>
 								  	<input type="text" class="form-control">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-								  	<label>Two-factor auth</label>
+								  	<label>New Email</label>
 								  	<input type="text" class="form-control">
 								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="" id="recovery">
-										<label class="form-check-label" for="recovery">
-										Recovery
-										</label>
-									</div>
-								</div>
-							</div>
 						</div>
 						<div>
-							<button class="btn btn-success">Update</button>
+							<button class="btn btn-success">Save</button>
 						</div>
 					</div>
-					<div class="tab-pane fade" id="application" role="tabpanel" aria-labelledby="application-tab">
-						<h3 class="mb-4">Application Settings</h3>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="" id="app-check">
-										<label class="form-check-label" for="app-check">
-										App check
-										</label>
-									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
-										<label class="form-check-label" for="defaultCheck2">
-										Lorem ipsum dolor sit.
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
+					<div class="tab-pane fade" id="2fa" role="tabpanel" aria-labelledby="2fa-tab">
+						<h3 class="mb-4">Two - Factor Authentication (2FA) </h3>
+						<h4>Authenticator App</h4>
 						<div>
-							<button class="btn btn-success">Update</button>
+							<button class="btn btn-success"><a class="enable-authenticator" href="#enable-authenticator">Set Up Authenticator App</a></button>
+							<button class="btn btn-success"><a class="reset-authenticator" href="#reset-authenticator">Reset Authenticator App</a></button> 
+							<a id="enable-authenticator-tab" class="enable-authenticator" href="#enable-authenticator">Set Up Authenticator App</a>
 						</div>
 					</div>
-					<div class="tab-pane fade" id="notification" role="tabpanel" aria-labelledby="notification-tab">
+
+					<div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="personal-tab">
 						<h3 class="mb-4">Notification Settings</h3>
 						<div class="form-group">
 							<div class="form-check">

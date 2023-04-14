@@ -42,3 +42,18 @@ body {
     color: #fff;
     background-color: #27ae60;
 }
+
+.enable-authenticator , .reset-authenticator{
+	text-decoration: none;
+	color: white;
+}
+
+.enable-authenticator:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.reset-authenticator:hover{
+	text-decoration: none;
+	color: white;
+}
