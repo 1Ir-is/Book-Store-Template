@@ -19,7 +19,6 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transform: width none;
 }
 
 html{
@@ -746,6 +745,7 @@ section{
     color: var(--green);
 }
 /* Footer section end */
+
 
 /* Loader start */
 .loader-container{
