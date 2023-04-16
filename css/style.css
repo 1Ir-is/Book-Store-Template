@@ -18,7 +18,6 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transform: width none;
 }
 
@@ -116,6 +115,7 @@ section{
     display: flex;
     align-items: center;
     border-radius: .5rem;
+    /* margin-left: 250px; */
 }
 
 .header .header-1 .search-form input{
@@ -138,14 +138,37 @@ section{
     color: var(--green);
 }
 
+.header .header-1 .icons {
+    display: flex;
+    align-items: center;
+}
+
+.header .header-1 .user-greeting {
+    display: flex;
+    align-items: center;
+}
+
+.header .header-1 .user-greeting .greeting {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    color: var(--black);
+    cursor: default;
+  }
+  
+  .header .header-1 .user-greeting .divider {
+    height: 2rem;
+    width: 1px;
+    background-color: var(--black);
+    margin-right: 1rem;
+  }
+
 .header .header-1 .icons div,
 .header .header-1 .icons a{
     font-size: 2.5rem;
-    margin-left: 1.5rem;
     color: var(--black);
     cursor: pointer;
+    margin-right: 1rem;
 }
-
 
 .header .header-1 .icons div:hover,
 .header .header-1 .icons a:hover{
@@ -201,6 +224,37 @@ section{
 
 #search-btn{
     display: none;
+}
+
+#search-btn{
+    display: none;
+}
+
+#login-btn{
+    margin-top: 3.5px;
+}
+
+.navbar{
+    width: 100%;
+    padding-bottom: unset;
+    padding-top: unset;
+}
+
+.navbar-nav{
+    flex-direction: unset;
+}
+
+#hover-unset:hover{
+    color: #444444;
+}
+
+#hover-unset{
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.icons{
+    margin-top: -10px;
 }
 
 .header .header-2{
@@ -263,6 +317,10 @@ section{
     font-size: 1.7rem;
 }
 
+.header .header-2 .navbar a:hover{
+    background: var(--dark-color);
+}
+
 .header .header-2.active{
     position: fixed;
     top: 0;
@@ -277,7 +335,6 @@ section{
 .bottom-navbar{
     text-align: center;
     background: var(--green);
-    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -681,61 +738,44 @@ section{
 
 
 /* Reviews section start */
-.reviews{
-    width: 100%;
-    height: auto;
-}
-
-.reviews h1{
+.reviews .reviews-slider .box{
+    width: 30rem;
+    border: var(--border);
+    padding: 2rem;
     text-align: center;
-    font-size: 50px;
-    margin-top: 55px;
+    margin-top: 15px;
 }
 
-.reviews .review_box{
-    width: 95%;
-    height: 50vh;
-    margin: 15px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.reviews .reviews-slider .box:hover{
+    border: var(--border-hover);
 }
 
-.reviews .review_box .review_card{
-    width: 400px;
-    height: 320px;
-    box-shadow: 0 0 8px var(--green);
-    padding: 15px;
-    margin: 0 12px;
-}
-
-.reviews .review_box .review_card i{
-    float: right;
-    font-size: 120px;
-    position: relative;
-    bottom: 20px;
-    color: #eaeaea;
-}
-
-.reviews .review_box .review_card .card_top img{
-    width: 80px;
+.reviews .reviews-slider .box img{
+    height: 7rem;
+    width: 7rem;
     border-radius: 50%;
-    margin-bottom: 10px;
+    object-fit: cover;
 }
 
-.reviews .review_box .review_card .card p{
-    margin: 10px 0 10px 0;
-    text-align: justify;
-    line-height: 22px;
+.reviews .reviews-slider .box h3{
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: .5rem 0;
 }
 
-.reviews .review_box .review_card .card .review_icon i{
-    font-size: 16px;
-    float: left;
-    margin-top: 20px;
+.reviews .reviews-slider .box p{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.reviews .reviews-slider .box .stars i{
+    font-size: 1.7rem;
     color: var(--green);
-    padding: 0 1px;
+
 }
+
 /* Reviews section end */
 
 /* Blog section start */
