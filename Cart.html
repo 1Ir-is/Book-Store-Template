@@ -4,39 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="./css/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 <body>
-    
-    <div class="small-container cart-page">
-        <table>
-            <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
-            </tr>
-            <tr>
-                <td>
-
-                    <div class="cart-info">
-                        <img src="image/book_1.jpg" alt="">
-                        <div>
-                            <p>COCOGOOSE</p>
-                            <small>Price: $50.00</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
+    <div class="wrapper">
+        <div class="items">
+            <div class="title">
+                <h3>Shopping Cart</h3>
+            </div>
+            <div class="product">
+                <img src="/image/book_10.png" alt="">
+                <div class="details">
+                    <h2>Book 1</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, laborum, aliquid voluptates consectetur dolorem
+                        adipisci vel pariatur modi, corrupti beatae amet tenetur! Repellat quo nulla unde maxime doloribus quisquam
+                        temporibus.
+                    </p>
+                    <div class="qty">
+                        <h4>Quantiy:  <input type="number" value="1" min="1"></h4>
+                        <button>Delete</button>
+                        <button>Share</button>
                     </div>
-
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$50.00</td>
-            </tr>
-        </table>
+                </div>
+                <div class="price">
+                    <p>$150</p>
+                </div>
+            </div>
+            <div class="total">
+                <h3>SubTotal</h3>
+                <h3>$150</h3>
+            </div>
+        </div>
     </div>
-
 </body>
 </html>

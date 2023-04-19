@@ -1,43 +1,129 @@
-.cart-page{
-    margin: 80px auto;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
-table{
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.cart-info{
+.wrapper{
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 40px;
 }
 
-th{
-    text-align: left;
-    padding: 5px;
-    color: #fff;
-    background: #ff523b;
-    font-weight: normal;
+.items{
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
 }
 
-td{
-    padding: 10px 5px;
+.items .title{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #999;
 }
 
-td input{
-    width: 40px;
-    height: 30px;
-    padding: 5px;
+.items .title h3{
+    font-size: 36px;
+    color: #333;
 }
 
-td a{
-    color: #ff523b;
-    font-size: 12px;
-    text-decoration: none;
+.items .product{
+    padding: 60px 30px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
 }
 
-td img{
-    width: 80px;
-    height: 80px;
+.product img{
+    width: 25%;
+    margin: 0 20px;
+}
+
+.product .details{
+    height: 100%;
+    margin: 0 20px;
+    width: 60%;
+    color: #222;
+}
+
+.details h2{
+    font-size: 36px;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+}
+
+.details p{
+    font-size: 20px;
+    color: #555;
+    padding: 10px 0;
+    text-align: justify;
+}
+
+.details .qty{
+    margin: 10px 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.qty h4{
+    margin-right: 30px;
+    font-size: 22px;
+}
+
+.qty h4 input{
+    width: 60px;
+    height: 45px;
+    font-size: 22px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    transition: 0.5s;
+}
+
+.details .qty button{
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    color: #006b97;
+    cursor: pointer;
     margin-right: 10px;
 }
+
+.details .qty button:hover{
+    background: #006b97;
+    color: #fff;
+}
+
+.product .price{
+    height: 100%;
+    margin: 0 20px;
+    width: 20%;
+    text-align: center;
+}
+
+.price p{
+    font-size: 36px;
+    padding: 10px 0;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 34px;
+    color: #333;
+    border-top : 1px solid #999;
+}
+
+
+

@@ -12,97 +12,74 @@
 <body>
     
 
-    <div class="container">
+    <div class="user-setting-container">
 
         <div class="leftbox">
+
             <nav>
                 <a onclick="tabs(0)" class="tab active">
                     <i class="fas fa-user"></i>
-                </a>
+                </a>    
                 <a onclick="tabs(1)" class="tab">
-                    <i class="fas fa-credit-card"></i>
+                    <i class="fas fa-envelope"></i>
                 </a>
                 <a onclick="tabs(2)" class="tab">
-                    <i class="fas fa-tv"></i>
+                    <i class="fas fa-key"></i>
                 </a>
                 <a onclick="tabs(3)" class="tab">
-                    <i class="fas fa-tasks"></i>
+                    <i class="fas fa-tv"></i>
                 </a>
                 <a onclick="tabs(4)" class="tab">
-                    <i class="fas fa-cog"></i>
+                    <i class="fas fa-database"></i>
                 </a>
             </nav>
+            
         </div>
 
         <div class="rightbox">
 
             <div class="profile tabShow">
-                <h1>Personal Info</h1>
-                <h2>Full Name</h2>
-                <input type="text" class="input" value="Jane Doe">
-                <h2>Birthday</h2>
-                <input type="text" class="input" value="May 10, 2003">
-                <h2>Gender</h2>
-                <input type="text" class="input" value="Male">
-                <h2>Email</h2>
-                <input type="email" class="input" value="mhuynk1005@gmail.com">
+                <h1>Profile Info</h1>
+                <h2>Username</h2>
+                <input type="text" class="input">
+                <h2>Phone Number</h2>
+                <input type="text" class="input">
                 <button class="btn-confirm">Update</button>
             </div>
 
             <div class="payment tabShow">
-                <h1>Payment Info</h1>
-                <h2>Payment Method</h2>
-                <input type="text" class="input" value="MasterCard - 02020- ***">
-                <h2>Zipcode</h2>
-                <input type="text" class="input" value="550000">
-                <h2>Billing Data</h2>
-                <input type="text" class="input" value="May 10, 2003">
-                <h2>Redeem Card</h2>
-                <input type="password" class="input" value="Enter gift code">
+                <h1>Manage Email</h1>
+                <h2>Current Email</h2>
+                <input type="text" class="input">
+                <h2>New Email</h2>
+                <input type="text" class="input">
                 <button class="btn-confirm">Update</button>
             </div>
 
             <div class="subscription tabShow">
-                <h1>Subscription Info</h1>
-                <h2>Payment Date</h2>
-                <p>May 12, 2019</p>
-                <h2>Next Charges</h2>
-                <p>$80 <span>Include Tax</span></p>
-                <h2>Plan</h2>
-                <p>Limited Plan</p>
-                <h2>Monthly</h2>
-                <p>$107.88 / month</p>
+                <h1>Change Password</h1>
+                <h2>Current Password</h2>
+                <input type="password" class="input">
+                <h2>New Password</h2>
+                <input type="password" class="input">
+                <h2>Confirm New Password</h2>
+                <input type="password" class="input">
                 <button class="btn-confirm">Update</button>
             </div>
 
             <div class="setting tabShow">
-                <h1>Account Settings</h1>
-                <h2>Sync WatchList</h2>
-                <p></p>
-                <h2>Hold Subscription</h2>
-                <p></p>
-                <h2>Cancel Subscription</h2>
-                <p></p>
-                <h2>Your Device</h2>
-                <p></p>
-                <h2>Referrals</h2>
-                <p></p>
-                <button class="btn-confirm">Update</button>
+                <h1>Two-factor authentication (2FA)</h1>
+                <h1>Authenticator app</h1>
+                <button class="btn-confirm">Set up authenticator app</button>
+                <button class="btn-confirm">Reset authenticator app</button>
             </div>
 
             <div class="privacy tabShow">
-                <h1>Privacy Settings</h1>
-                <h2>Manage Email noti</h2>
-                <p></p>
-                <h2>Manage privacy setting</h2>
-                <p></p>
-                <h2>View term of use</h2>
-                <p></p>
-                <h2>personalize ad experience</h2>
-                <p></p>
-                <h2>protect account</h2>
-                <p></p>
-                <button class="btn-confirm">Update</button>
+                <h1>Personal Data</h1>
+                <h2>Your account contains personal data that you have given us. This page allows you to download or delete that data.</h2>
+                <h2>Deleting this data will permanently remove your account, and this cannot be recovered.</h2>
+                <button class="btn-confirm">Dowload</button>
+                <button class="btn-confirm">Delete</button>
             </div>
 
         </div>

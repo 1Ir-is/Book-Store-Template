@@ -1,9 +1,4 @@
-body{
-    background: linear-gradient(to right, #2ed573, #f9ca24);
-    overflow: hidden;
-}
-
-.container{
+.user-setting-container{
     background: #fff;
     width: 540px;
     height: 450px;
